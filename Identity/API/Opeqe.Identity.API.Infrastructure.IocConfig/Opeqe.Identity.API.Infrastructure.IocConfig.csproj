@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Opeqe.Services.Identity.API.Infrastructure.IocConfig</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Dapper" Version="2.0.30" />
+    <PackageReference Include="DNTCommon.Web.Core" Version="1.8.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.1" />
+    <PackageReference Include="HangFire" Version="1.7.8" />
+    <PackageReference Include="MediatR" Version="8.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.10.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="5.1.2" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.ColoredConsole" Version="3.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Core" Version="5.5.0" />
+    <PackageReference Include="StackExchange.Redis.Extensions.Newtonsoft" Version="5.5.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="3.0.3" />
+    <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="3.0.0" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="3.0.0" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Commons\EventBus\EventBusRabbitMQ\EventBusRabbitMQ.csproj" />
+    <ProjectReference Include="..\..\..\Commons\InfraStructure\Opeqe.Infrastructure.Data.Context\Opeqe.Infrastructure.Data.Context.csproj" />
+    <ProjectReference Include="..\..\..\Commons\InfraStructure\Opeqe.Infrastructure.Toolkits\Opeqe.Infrastructure.Toolkits.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Opeqe.Identity.Infrastructure.Data.InMemoryDatabase\Opeqe.Identity.Infrastructure.Data.InMemoryDatabase.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Opeqe.Identity.Infrastructure.Data.MSSQL\Opeqe.Identity.Infrastructure.Data.MSSQL.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Opeqe.Identity.Infrastructure.Entities\Opeqe.Identity.Infrastructure.Entities.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Opeqe.Identity.Infrastructure.Services\Opeqe.Identity.Infrastructure.Services.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Opeqe.IdentityInfrastructure.Mapper\Opeqe.IdentityInfrastructure.Mapper.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Opeqe.IdentityInfrastructure.Settings\Opeqe.Identity.Infrastructure.Settings.csproj" />
+  </ItemGroup>
+
+</Project>

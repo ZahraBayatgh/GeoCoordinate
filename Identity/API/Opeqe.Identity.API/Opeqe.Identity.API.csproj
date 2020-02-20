@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.Mongodb" Version="3.0.1" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Dapper" Version="2.0.30" />
+    <PackageReference Include="DNTCommon.Web.Core" Version="1.8.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.1" />
+    <PackageReference Include="HangFire" Version="1.7.8" />
+    <PackageReference Include="MagicOnion" Version="3.0.3" />
+    <PackageReference Include="MediatR" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="5.1.3" />
+    <PackageReference Include="cloudscribe.Web.Pagination" Version="3.0.0" />
+    <PackageReference Include="Polly" Version="7.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.HealthChecks" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Commons\Domain\Opeqe.Domain.SeedWork\Opeqe.Domain.SeedWork.csproj" />
+    <ProjectReference Include="..\..\..\Commons\EventBus\EventBusRabbitMQ\EventBusRabbitMQ.csproj" />
+    <ProjectReference Include="..\..\..\Commons\EventBus\EventBus\EventBus.csproj" />
+    <ProjectReference Include="..\..\..\Commons\EventBus\IntegrationEventLogEF\IntegrationEventLogEF.csproj" />
+    <ProjectReference Include="..\..\..\Commons\InfraStructure\Opeqe.Infrastructure.Data.Context\Opeqe.Infrastructure.Data.Context.csproj" />
+    <ProjectReference Include="..\..\..\Commons\InfraStructure\Opeqe.Infrastructure.Idempotency\Opeqe.Infrastructure.Idempotency.csproj" />
+    <ProjectReference Include="..\..\..\Commons\InfraStructure\Opeqe.Infrastructure.Toolkits\Opeqe.Infrastructure.Toolkits.csproj" />
+    <ProjectReference Include="..\..\..\Commons\InfraStructure\Middlewares\Opeqe.Infrastructure.Serilog\Opeqe.Infrastructure.Serilog.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Opeqe.Identity.Infrastructure.Data\Opeqe.Identity.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Opeqe.Identity.Infrastructure.Entities\Opeqe.Identity.Infrastructure.Entities.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Opeqe.Identity.Infrastructure.ViewModels\Opeqe.Identity.Infrastructure.ViewModels.csproj" />
+    <ProjectReference Include="..\Opeqe.Identity.API.Infrastructure.IocConfig\Opeqe.Identity.API.Infrastructure.IocConfig.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+  
+</Project>
